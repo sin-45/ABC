@@ -1,0 +1,10 @@
+C:\Users\Mayur\マイコン部\.vscode\ABC\ABC_426\Rust\A\target\debug\deps\libproconio-47f6afa76c1d2825.rmeta: C:\Users\Mayur\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\proconio-0.5.0\src\lib.rs C:\Users\Mayur\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\proconio-0.5.0\src\marker.rs C:\Users\Mayur\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\proconio-0.5.0\src\source\mod.rs C:\Users\Mayur\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\proconio-0.5.0\src\source\line.rs C:\Users\Mayur\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\proconio-0.5.0\src\source\once.rs C:\Users\Mayur\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\proconio-0.5.0\src\source\tokens.rs
+
+C:\Users\Mayur\マイコン部\.vscode\ABC\ABC_426\Rust\A\target\debug\deps\proconio-47f6afa76c1d2825.d: C:\Users\Mayur\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\proconio-0.5.0\src\lib.rs C:\Users\Mayur\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\proconio-0.5.0\src\marker.rs C:\Users\Mayur\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\proconio-0.5.0\src\source\mod.rs C:\Users\Mayur\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\proconio-0.5.0\src\source\line.rs C:\Users\Mayur\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\proconio-0.5.0\src\source\once.rs C:\Users\Mayur\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\proconio-0.5.0\src\source\tokens.rs
+
+C:\Users\Mayur\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\proconio-0.5.0\src\lib.rs:
+C:\Users\Mayur\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\proconio-0.5.0\src\marker.rs:
+C:\Users\Mayur\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\proconio-0.5.0\src\source\mod.rs:
+C:\Users\Mayur\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\proconio-0.5.0\src\source\line.rs:
+C:\Users\Mayur\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\proconio-0.5.0\src\source\once.rs:
+C:\Users\Mayur\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\proconio-0.5.0\src\source\tokens.rs:
