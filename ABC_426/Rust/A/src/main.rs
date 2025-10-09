@@ -14,31 +14,18 @@ use itertools::iproduct;
 
 fn main() {
     input! {
-        n: i32,
+        mut x : String,
+        mut y : String,
     }
-    for _ in 0..n {
-        input! {
-            s: char,
-        }
-        let d: i32 = s as i32;
-        match s {
-            'a'..='z' => {
-                println!("小文字です: {}", s);
-            }
-            'A'..='Z' => {
-                println!("大文字です: {}", s);
-            }
-            '0'..='9' => {
-                println!("数字です: {}", s);
-            }
-            _ => {
-                println!("other");
-            }
-        }
-        print(d);
+    if x == "Lynx" {
+        x = String::from("ZZZZ");
     }
-}
-
-fn print(s: i32) {
-    println!("{}", s);
+    if y == "Lynx" {
+        y = String::from("ZZZZ");
+    }
+    if x >= y {
+        println!("Yes");
+    } else {
+        println!("No");
+    }
 }
