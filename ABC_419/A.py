@@ -6,4 +6,3 @@ if s in d:
 
 else:
     print("Unknown")
-    
