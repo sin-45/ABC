@@ -1,0 +1,9 @@
+# Rust: ビルド成果物 (Debug/Releaseを問わず)
+target/
+
+# Python: バイトコードキャッシュ
+__pycache__/
+
+# Python: 仮想環境
+venv/
+.venv/
