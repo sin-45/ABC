@@ -16,10 +16,10 @@ fn main() {
     input! {
         n: usize,
         q: usize,
-        a: [u32; n],
+        a: [u64; n],
     }
     let mut point: usize = 0;
-    let mut list: Vec<u32> = Vec::new();
+    let mut list: Vec<u64> = Vec::new();
     list.push(0);
     for i in 0..2*n {
         list.push(list[i] + a[i%n]);
@@ -39,7 +39,7 @@ fn main() {
                 l: usize,
                 r: usize,
             }
-            let a: u32 = list[r+point] - list[l+point-1];
+            let a: u64 = list[r+point] - list[l+point-1];
             println!("{}", a);
         }
     }
