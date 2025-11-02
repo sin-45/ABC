@@ -11,7 +11,6 @@ use std::cmp::min;
 use std::cmp::max;
 use itertools::Itertools;
 use itertools::iproduct;
-use std::io::{stdout, Write};
 use proconio::marker::Chars;
 
 fn main() {
