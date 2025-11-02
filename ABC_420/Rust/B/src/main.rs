@@ -11,7 +11,6 @@ use std::cmp::min;
 use std::cmp::max;
 use itertools::Itertools;
 use itertools::iproduct;
-use std::io::{stdout, Write};
 use proconio::marker::Chars;
 
 fn main() {
@@ -40,7 +39,6 @@ fn main() {
         for i in 0..n {
             if s[i][c] == key {
                 score[i] += 1;
-
             }
         }
     }
