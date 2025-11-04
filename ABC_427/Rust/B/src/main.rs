@@ -12,23 +12,19 @@ use std::cmp::max;
 use itertools::Itertools;
 use itertools::iproduct;
 
+
+fn f(t: u32) -> u32 {
+    t.to_string().chars().map(|c| c.to_digit(10).unwrap()).sum::<u32>()
+}
+
 fn main() {
     input! {
         n: usize,
-        k: usize,
-        s: String,
     }
-    let mut hash: BTreeMap<&str, u16> = BTreeMap::new();
-    for i in 0..n-k+1 {
-        let slice: &str = &s[i..i+k];
-        *hash.entry(slice).or_insert(0) += 1;
+    let mut list: Vec<u32> = Vec::new();
+    list.push(1);
+    for i in 0..n {
+        list.push(list[i] + f(list[i]));
     }
-    let max: u16 = *hash.values().max().unwrap();
-    println!("{}", max);
-    for (key, value) in &hash {
-        if *value == max {
-            print!("{} ", key);
-        }
-    }
-    println!("");
+    println!("{}", list[n-1]);
 }
