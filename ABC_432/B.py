@@ -1,0 +1,5 @@
+X = list(map(int, list(input())))
+m = min(list(filter(lambda x: x != 0, X)))
+X.remove(m)
+X.sort()
+print(m, *X, sep="")
