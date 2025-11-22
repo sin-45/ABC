@@ -14,5 +14,19 @@ use itertools::iproduct;
 
 
 fn main() {
-    println!("Hello, world!");
+    input! {
+        s: String,
+    }
+    let mut x: Vec<u8> = s.chars().map(|x| x.to_digit(10).unwrap() as u8).collect();
+    x.sort_unstable();
+    let mut first: u8 = 10;
+    let mut vec: Vec<u8> = Vec::new();
+    for i in x {
+        if i != 0 && first > i {
+            first = i;
+        } else {
+            vec.push(i);
+        }
+    }
+    println!("{}{:?}", first, vec.iter().format(""));
 }

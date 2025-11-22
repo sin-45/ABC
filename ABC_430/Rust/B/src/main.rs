@@ -11,16 +11,28 @@ use std::cmp::min;
 use std::cmp::max;
 use itertools::Itertools;
 use itertools::iproduct;
-
+use proconio::marker::Chars;
 
 fn main() {
     input! {
-        a: u8,
-        b: u8,
-        c: u8,
+        n: usize,
+        m: usize,
+        grid: [Chars; n]
     }
-    let mut vec: Vec<u8> = vec![a, b, c];
-    vec.sort_unstable();
-    vec.reverse();
-    println!("{:?}", vec.iter().format(""));
+    for i in &grid {
+        println!("{:?}", i);
+    }
+    let mut set: HashSet<String> = HashSet::new();
+    for i in 0..n-m+1 {
+        for j in 0..n-m+1 {
+            let mut temp: String = "".to_string();
+            for k in 0..m {
+                for l in 0..m {
+                    temp += &grid[i+k][j+l].to_string();
+                }
+            }
+            set.insert(temp);
+        }
+    }
+    println!("{}", set.len());
 }

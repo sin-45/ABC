@@ -18,9 +18,11 @@ fn main() {
         a: u8,
         b: u8,
         c: u8,
+        d: u8,
     }
-    let mut vec: Vec<u8> = vec![a, b, c];
-    vec.sort_unstable();
-    vec.reverse();
-    println!("{:?}", vec.iter().format(""));
+    if a <= c && b > d {
+        println!("Yes");
+    } else {
+        println!("No");
+    }
 }
