@@ -14,5 +14,13 @@ use itertools::iproduct;
 
 
 fn main() {
-    println!("Hello, world!");
+    input! {
+        a: u8,
+        b: u8,
+        c: u8,
+    }
+    let mut vec: Vec<u8> = vec![a, b, c];
+    vec.sort_unstable();
+    vec.reverse();
+    println!("{:?}", vec.iter().format(""));
 }
