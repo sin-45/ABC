@@ -14,5 +14,23 @@ use itertools::iproduct;
 
 
 fn main() {
-    println!("Hello, world!");
+    input! {
+        n: usize,
+        m: usize,
+    }
+    let mut a_list: [u16; 101] = [0; 101];
+    let mut b_list: [u16; 101] = [0; 101];
+    for i in 0..n {
+        input! {
+            a: usize,
+            b: u16,
+        }
+        a_list[a] += b;
+        b_list[a] += 1;
+    }
+    for i in 1..101 {
+        if b_list[i] != 0 {
+            println!("{}", a_list[i] as f64 / b_list[i] as f64);
+        }
+    }
 }
