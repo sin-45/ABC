@@ -14,5 +14,11 @@ use itertools::iproduct;
 
 
 fn main() {
-
+    input! {
+        w: f64,
+        b: f64,
+    }
+    let temp: f64 = w / b * 1000.0;
+    let ans: i32 = temp as i32 + 1;
+    println!("{}", ans);
 }
