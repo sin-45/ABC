@@ -11,7 +11,7 @@ use std::cmp::min;
 use std::cmp::max;
 use itertools::Itertools;
 use itertools::iproduct;
-
+use std::process;
 
 fn main() {
     input! {
@@ -24,10 +24,10 @@ fn main() {
         vec.push(1);
     }
     let mut cnt: u64 = (k as u64) % MOD;
-    for i in k..=n {
-        cnt %= MOD; 
+    let loop_end = if n >= k { n-k+1 } else {0};
+    for i in 0..loop_end {
         vec.push(cnt);
-        cnt += cnt - vec[i-k];
+        cnt = (cnt + cnt + MOD - vec[i]) % MOD;
     }
     println!("{}", vec[n]);
 }
