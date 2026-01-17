@@ -1,5 +1,5 @@
 n = int(input())
-A = [i*i for i in range(int(pow(10 ** 7, 1/2)))]
+A = [i*i for i in range(int(pow(10 ** 7, 1/2))+2)]
 temp = [0] * (n+1)
 
 for i in range(1, len(A)):
