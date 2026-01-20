@@ -1,4 +1,4 @@
-    use proconio::input;
+use proconio::input;
 use std::collections::HashSet; // set -> hash
 use std::collections::HashMap; // 連想配列 -> hash
 use std::collections::BinaryHeap; // priority_queue -> 二分ヒープ
